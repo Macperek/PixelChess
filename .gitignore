@@ -1,0 +1,16 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+__MACOSX/
+.idea/
+cmake-build-*/
+build/
+CMakeCache.txt
+CMakeFiles/
+Makefile
+cmake_install.cmake
+*.vpk
+*.elf
+*.velf
+*.bin
+eboot.bin
