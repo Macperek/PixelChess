@@ -1,4 +1,5 @@
 #pragma once
+#include "Piece.h"
 
 const float PI = 3.14159265f;
 const float PI_HALF = 1.57079632679f;
@@ -19,8 +20,6 @@ const int DRAW_BOARD_SIZE = (int)(BOARD_PIXELS * SCALE);
 const int BOARD_OFFSET_X = (960 - DRAW_BOARD_SIZE) / 2; 
 const int BOARD_OFFSET_Y = (544 - DRAW_BOARD_SIZE) / 2; 
 
-enum PieceType { PAWN = 0, BISHOP = 1, KNIGHT = 2, ROOK = 3, KING = 4, QUEEN = 5, EMPTY = 6 };
-enum PieceColor { WHITE = 0, BLACK = 1, NONE = 2 };
 enum GameState {
     MAIN_MENU,
     HOW_TO_PLAY,
@@ -29,12 +28,3 @@ enum GameState {
     BLACK_WINS,
     DRAW
 };
-
-struct Piece{
-    PieceType type;
-    PieceColor color;
-    bool hasMoved = false;
-    Piece():type(EMPTY), color(NONE), hasMoved(false){};
-    Piece(PieceType t, PieceColor c):type(t), color(c), hasMoved(false){}
-  };
-

@@ -11,7 +11,10 @@ add_executable(PixelChess main.cpp
         Board.cpp
         Renderer.cpp
         Input.cpp
-        input.h)
+        input.h
+        Piece.h
+        Game.cpp
+        Game.h)
 
 target_link_libraries(PixelChess
         vita2d
@@ -34,7 +37,7 @@ vita_create_vpk(PixelChess.vpk "PIXC02137" eboot.bin
         NAME "Pixel Chess"
         VERSION "01.00"
         FILE ${CMAKE_CURRENT_SOURCE_DIR}/assets assets
-        FILE ${CMAKE_CURRENT_SOURCE_DIR}/icon0.png sce_sys/icon0.png
-        FILE ${CMAKE_CURRENT_SOURCE_DIR}/bg0.png sce_sys/livearea/contents/bg0.png
-        FILE ${CMAKE_CURRENT_SOURCE_DIR}/template.xml sce_sys/livearea/contents/template.xml
+        FILE ${CMAKE_CURRENT_SOURCE_DIR}/sce_sys/icon0.png sce_sys/icon0.png
+        FILE ${CMAKE_CURRENT_SOURCE_DIR}/sce_sys/bg0.png sce_sys/livearea/contents/bg0.png
+        FILE ${CMAKE_CURRENT_SOURCE_DIR}/sce_sys/template.xml sce_sys/livearea/contents/template.xml
 )

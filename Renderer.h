@@ -1,7 +1,7 @@
 #pragma once
 #include <vita2d.h>
-#include "constants.h"
-#include "board.h" 
+#include "Constants.h"
+#include "Board.h"
 
 class Renderer {
 public:
@@ -9,20 +9,12 @@ public:
     ~Renderer();
 
     void drawBoard();
-
     void drawPieces(Board& board);
-
     void drawHighlight(int boardX, int boardY);
-
     void drawPromotionMenu(int currentTurnColor);
-
     void drawEndBanner(int currentTurnColor);
-
     void drawMainMenu();
-
     void drawHowToPlay();
-
-
 
 private:
     vita2d_texture* boardTex;
