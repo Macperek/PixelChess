@@ -26,4 +26,5 @@ You are completely free to use, modify, and build upon the source code and files
 
 HAVE FUN!
 
-<img width="960" height="544" alt="image" src="https://github.com/user-attachments/assets/3b2b86a0-1faf-4f01-9251-8087b3aee8e9" />
+<img width="957" height="544" alt="image" src="https://github.com/user-attachments/assets/6be27f66-01e7-4046-8221-7aa621829a37" />
+
